@@ -7,16 +7,15 @@ public class MovimientoJugador : MonoBehaviour
     [SerializeField] float velocidadCaminar = 5f; // Velocidad al caminar
     [SerializeField] float velocidadCorrer = 10f; // Velocidad al correr
     [SerializeField] float fuerzaSalto = 10f;
-    [SerializeField] float gravedad;
 
     // Vectores y variables de entorno
     Vector2 movimiento;
+    [SerializeField] Animator animator;
     float bufferCheckDistance = 0.3f, groundCheckDistance;
     float velocidadActual;
     float moveInput;
     bool quiereSaltar = false;
     bool puedeSaltar = true;
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -33,10 +32,17 @@ public class MovimientoJugador : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift))
         {
             velocidadActual = velocidadCorrer;
+            animator.SetBool("isDashing", true);
+            animator.SetBool("IsRunning", false);
         }
         else
         {
             velocidadActual = velocidadCaminar;
+            animator.SetBool("isDashing", false);
+            if (moveInput != 0)
+            {
+                animator.SetBool("IsRunning", true);
+            }
         }
 
         // Rotación del personaje
@@ -48,7 +54,8 @@ public class MovimientoJugador : MonoBehaviour
         // Detectar si el jugador quiere saltar
         if (puedeSaltar && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)))
         {
-            quiereSaltar = true;  
+            quiereSaltar = true;
+            animator.SetBool("isJumping", true);
         }
     }
 
@@ -61,7 +68,7 @@ public class MovimientoJugador : MonoBehaviour
         if (quiereSaltar)
         {
             AplicarSalto(fuerzaSalto);
-            quiereSaltar = false;  // Resetea el estado de salto
+            quiereSaltar = false;
         }
     }
 
@@ -70,6 +77,14 @@ public class MovimientoJugador : MonoBehaviour
     {
         movimiento = new Vector2(moveInput * velocidadActual, rb.velocity.y);
         rb.velocity = movimiento;
+        if(rb.velocity.x != 0)
+        {
+            animator.SetBool("IsRunning", true);
+        }
+        else
+        {
+            animator.SetBool("IsRunning", false);
+        }
     }
 
     // Handler para el manejo de la rotación
@@ -90,13 +105,32 @@ public class MovimientoJugador : MonoBehaviour
         RaycastHit2D hitIzquierda = Physics2D.Raycast(esquinaIzquierda, Vector2.down, groundCheckDistance);
         RaycastHit2D hitDerecha = Physics2D.Raycast(esquinaDerecha, Vector2.down, groundCheckDistance);
 
-        if (hitCentro.collider || hitIzquierda.collider || hitDerecha.collider) puedeSaltar = true;
-        else puedeSaltar = false;
+        if (hitCentro.collider || hitIzquierda.collider || hitDerecha.collider)
+        {
+            puedeSaltar = true;
+        }
+        else
+        {
+            puedeSaltar = false;
+        }
     }
 
     // Aplico salto sobre el lobo (Jugador)
     void AplicarSalto(float fuerzaSalto)
     {
         rb.velocity = new Vector2(rb.velocity.x, fuerzaSalto);
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        // Verifico la colision con el suelo por Tag o por Layer
+        if (col.gameObject.CompareTag("Suelo") || col.gameObject.CompareTag("piso") || col.gameObject.layer == LayerMask.NameToLayer("Piso"))
+        {
+            animator.SetBool("isJumping", false);
+        }
+        if (col.gameObject.CompareTag("Arbol"))
+        {
+            animator.SetBool("isInteracting", true);
+        }
     }
 }

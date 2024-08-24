@@ -739,7 +739,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853681408}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -1077,7 +1077,7 @@ Transform:
   m_GameObject: {fileID: 970971921}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0007890649, y: -0.15697552, z: -0.004964293, w: 0.9875898}
-  m_LocalPosition: {x: -5.55, y: -15.58, z: 0.10959078}
+  m_LocalPosition: {x: 25.8, y: -7.55, z: 0.10959078}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1090,7 +1090,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 970971921}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -1705,6 +1705,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1263289422}
   - component: {fileID: 1263289423}
+  - component: {fileID: 1263289424}
   m_Layer: 11
   m_Name: frente (2)
   m_TagString: Frente
@@ -1779,6 +1780,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1263289424
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263289421}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 19.2, y: 10.8}
+    newSize: {x: 19.2, y: 10.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 19.2, y: 10.8}
+  m_EdgeRadius: 0
 --- !u!1 &1275119641
 GameObject:
   m_ObjectHideFlags: 0
@@ -1916,7 +1962,7 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_Sprite: {fileID: -1243560718, guid: 26355ff27a5adbe4197a2809905d0bc0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -1957,7 +2003,7 @@ MonoBehaviour:
   velocidadCaminar: 5
   velocidadCorrer: 10
   fuerzaSalto: 10
-  gravedad: 0
+  animator: {fileID: 1275119647}
 --- !u!95 &1275119647
 Animator:
   serializedVersion: 5
@@ -2005,6 +2051,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1303973704}
   - component: {fileID: 1303973703}
+  - component: {fileID: 1303973705}
   m_Layer: 6
   m_Name: piso
   m_TagString: Suelo
@@ -2055,7 +2102,7 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_Sprite: {fileID: 508442959, guid: 60254ce8edc355f4fb1bcad8277c08a0, type: 3}
   m_Color: {r: 0.41176474, g: 0.41176474, b: 0.41176474, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -2079,6 +2126,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1766446563}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1303973705
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303973702}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 19.06, y: 1.5}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 19.06, y: 1.5}
+  m_EdgeRadius: 0
 --- !u!1 &1338454905
 GameObject:
   m_ObjectHideFlags: 0
@@ -2115,8 +2207,8 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0.63, y: -0.5}
-  m_ConnectedAnchor: {x: 9.18, y: -17.2388}
+  m_Anchor: {x: 0.6300001, y: -0.49999973}
+  m_ConnectedAnchor: {x: 22.119999, y: -13.3857975}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -2258,7 +2350,7 @@ Transform:
   m_GameObject: {fileID: 1338454905}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.55, y: -13.473, z: 0}
+  m_LocalPosition: {x: 21.49, y: -9.62, z: 0}
   m_LocalScale: {x: 1, y: 7.5316, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2370,6 +2462,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1530056982}
   - component: {fileID: 1530056983}
+  - component: {fileID: 1530056984}
   m_Layer: 11
   m_Name: frente (1)
   m_TagString: Frente
@@ -2444,6 +2537,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1530056984
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530056981}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 19.2, y: 10.8}
+    newSize: {x: 19.2, y: 10.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 19.2, y: 10.8}
+  m_EdgeRadius: 0
 --- !u!1 &1700211880
 GameObject:
   m_ObjectHideFlags: 0
@@ -2853,7 +2991,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082866128}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: cf1767798633c6e42b9e305b3b93a3a5, type: 3}
