@@ -8,6 +8,8 @@ TagManager:
   - Suelo
   - Arbol
   - Cazador
+  - trigger cachorros
+  - trigger musica
   layers:
   - Default
   - TransparentFX
