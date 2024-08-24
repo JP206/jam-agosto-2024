@@ -11,11 +11,11 @@ public class MovimientoJugador : MonoBehaviour
 
     // Vectores y variables de entorno
     Vector2 movimiento;
-    bool puedeSaltar = true;
     float bufferCheckDistance = 0.3f, groundCheckDistance;
-    float moveInput;
-    bool quiereSaltar = false;  // Variable para detectar si el jugador quiere saltar
     float velocidadActual;
+    float moveInput;
+    bool quiereSaltar = false;
+    bool puedeSaltar = true;
 
     void Start()
     {
