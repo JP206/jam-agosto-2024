@@ -258,7 +258,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1275119641}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 574b861ca328f144fbe48892dbb2ef10, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -309,7 +309,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -402,6 +402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 5
   fuerzaSalto: 10
+  gravedad: 0
 --- !u!95 &1275119647
 Animator:
   serializedVersion: 5
@@ -434,9 +435,9 @@ GameObject:
   - component: {fileID: 1303973704}
   - component: {fileID: 1303973703}
   - component: {fileID: 1303973705}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: piso
-  m_TagString: piso
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -501,12 +502,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1303973702}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.14, y: -4.6, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -11.445557, y: -3.2836056, z: -0.05177498}
   m_LocalScale: {x: 20.663103, y: 0.885, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1766446563}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1303973705
 BoxCollider2D:
@@ -564,9 +565,9 @@ GameObject:
   - component: {fileID: 1330727876}
   - component: {fileID: 1330727875}
   - component: {fileID: 1330727874}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: piso (1)
-  m_TagString: piso
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -676,12 +677,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330727873}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.55, y: -4.6, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.964442, y: -3.2836056, z: -0.05177498}
   m_LocalScale: {x: 20.663103, y: 0.885, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1766446563}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1338454905
 GameObject:
@@ -696,9 +697,10 @@ GameObject:
   - component: {fileID: 1338454908}
   - component: {fileID: 1338454907}
   - component: {fileID: 1338454906}
+  - component: {fileID: 1338454911}
   m_Layer: 0
   m_Name: arbol
-  m_TagString: piso
+  m_TagString: Arbol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -867,12 +869,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1338454911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338454905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f0b6e9779d6ffd4192437d128f43633, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1766446562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1766446563}
+  m_Layer: 6
+  m_Name: Suelo
+  m_TagString: Suelo
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1766446563
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766446562}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.585557, y: -1.3163942, z: 0.05177498}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1303973704}
+  - {fileID: 1330727876}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
-  - {fileID: 1303973704}
-  - {fileID: 1330727876}
   - {fileID: 1275119645}
   - {fileID: 1338454910}
+  - {fileID: 1766446563}
