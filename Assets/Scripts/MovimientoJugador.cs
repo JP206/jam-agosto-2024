@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MovimientoJugador : MonoBehaviour
@@ -8,10 +6,12 @@ public class MovimientoJugador : MonoBehaviour
     [SerializeField] float velocidad, fuerzaSalto;
     Vector2 movimiento;
     bool puedeSaltar = true;
+    float bufferCheckDistance = 0.3f, groundCheckDistance;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();    
+        rb = GetComponent<Rigidbody2D>();
+        groundCheckDistance = GetComponent<BoxCollider2D>().size.y / 2 + bufferCheckDistance;
     }
 
     void Update()
@@ -33,18 +33,21 @@ public class MovimientoJugador : MonoBehaviour
             rb.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
             puedeSaltar = false;
         }
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, groundCheckDistance);
+        if (hit.collider)
+        {
+            puedeSaltar = true;
+        }
+        else
+        {
+            puedeSaltar = false;
+        }
+        Debug.DrawRay(transform.position, Vector2.down * groundCheckDistance, Color.red);
     }
 
     void FixedUpdate()
     {
         rb.velocity = movimiento;
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.tag.Equals("piso"))
-        {
-            puedeSaltar = true;
-        }
     }
 }

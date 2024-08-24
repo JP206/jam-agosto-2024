@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 1275119642}
   - component: {fileID: 1275119646}
   - component: {fileID: 1275119647}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: jugador
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -698,7 +698,7 @@ GameObject:
   - component: {fileID: 1338454906}
   m_Layer: 0
   m_Name: arbol
-  m_TagString: Untagged
+  m_TagString: piso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
