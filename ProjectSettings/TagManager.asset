@@ -10,6 +10,10 @@ TagManager:
   - Cazador
   - trigger cachorros
   - trigger musica
+  - Fondo1
+  - Fondo2
+  - Fondo3
+  - Frente
   layers:
   - Default
   - TransparentFX
@@ -19,10 +23,10 @@ TagManager:
   - UI
   - Piso
   - Cazador
-  - 
-  - 
-  - 
-  - 
+  - Fondo1
+  - Fondo2
+  - Fondo3
+  - Frente
   - 
   - 
   - 
