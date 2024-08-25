@@ -13,6 +13,6 @@ public class CamaraSeguirJugador : MonoBehaviour
 
     void LateUpdate()
     {
-        transform.position = new Vector3(jugador.transform.position.x, jugador.transform.position.y, -10);
+        transform.position = new Vector3(jugador.transform.position.x, 0.5f, -10);
     }
 }
