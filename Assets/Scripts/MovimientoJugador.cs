@@ -1,14 +1,14 @@
+using System.Collections;
 using UnityEngine;
 
 public class MovimientoJugador : MonoBehaviour
 {
-    // Objetos y animaciones
     Rigidbody2D rb;
-    [SerializeField] float velocidadCaminar = 5f; // Velocidad al caminar
-    [SerializeField] float velocidadCorrer = 10f; // Velocidad al correr
+    [SerializeField] float velocidadCaminar = 5f;
+    [SerializeField] float velocidadCorrer = 10f;
     [SerializeField] float fuerzaSalto = 10f;
+    [SerializeField] float fuerzaEmpuje = 10f;
 
-    // Vectores y variables de entorno
     Vector2 movimiento;
     [SerializeField] Animator animator;
     float bufferCheckDistance = 0.3f, groundCheckDistance;
@@ -16,6 +16,10 @@ public class MovimientoJugador : MonoBehaviour
     float moveInput;
     bool quiereSaltar = false;
     bool puedeSaltar = true;
+    bool estaEmpujando = false;
+
+    private GameObject arbol;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -25,76 +29,72 @@ public class MovimientoJugador : MonoBehaviour
 
     void Update()
     {
-        // Capturar la entrada del jugador
-        moveInput = Input.GetAxis("Horizontal");
+        if (!estaEmpujando)
+        {
+            moveInput = Input.GetAxis("Horizontal");
 
-        // Cambiar entre caminar y correr
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            velocidadActual = velocidadCorrer;
-            animator.SetBool("isDashing", true);
-            animator.SetBool("IsRunning", false);
-        }
-        else
-        {
-            velocidadActual = velocidadCaminar;
-            animator.SetBool("isDashing", false);
-            if (moveInput != 0)
+            if (Input.GetKey(KeyCode.LeftShift))
             {
-                animator.SetBool("IsRunning", true);
+                velocidadActual = velocidadCorrer;
+                animator.SetBool("isDashing", true);
+                animator.SetBool("IsRunning", false);
             }
-        }
+            else
+            {
+                velocidadActual = velocidadCaminar;
+                animator.SetBool("isDashing", false);
+                animator.SetBool("IsRunning", moveInput != 0);
+            }
 
-        // Rotación del personaje
-        RotacionHandler();
+            // Controlar la rotación del personaje
+            RotacionHandler();
 
-        // Detección de suelo
-        PisoChecker();
+            // Chequear si está en el suelo
+            PisoChecker();
 
-        // Detectar si el jugador quiere saltar
-        if (puedeSaltar && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)))
-        {
-            quiereSaltar = true;
-            animator.SetBool("isJumping", true);
+            // Detectar si el jugador quiere saltar
+            if (puedeSaltar && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)))
+            {
+                quiereSaltar = true;
+                animator.SetBool("isJumping", true);
+            }
+
+            // Si no hay movimiento y no se está saltando, está en Idle
+            if (moveInput == 0 && puedeSaltar)
+            {
+                animator.SetBool("IsRunning", false);
+                animator.SetBool("isJumping", false);
+            }
         }
     }
 
     void FixedUpdate()
     {
-        // Aplicar movimiento basado en la entrada
-        MovimientoHandler();
-
-        // Aplicar salto si el jugador quiere saltar
-        if (quiereSaltar)
+        if (!estaEmpujando)
         {
-            AplicarSalto(fuerzaSalto);
-            quiereSaltar = false;
+            MovimientoHandler();
+
+            // Aplicar el salto si es necesario
+            if (quiereSaltar)
+            {
+                AplicarSalto(fuerzaSalto);
+                quiereSaltar = false;
+            }
         }
     }
 
-    // Handler para el manejo de movimiento
     void MovimientoHandler()
     {
         movimiento = new Vector2(moveInput * velocidadActual, rb.velocity.y);
         rb.velocity = movimiento;
-        if(rb.velocity.x != 0)
-        {
-            animator.SetBool("IsRunning", true);
-        }
-        else
-        {
-            animator.SetBool("IsRunning", false);
-        }
     }
 
-    // Handler para el manejo de la rotación
     void RotacionHandler()
     {
         if (movimiento.x < 0) transform.rotation = Quaternion.Euler(0, 0, 0);
         else if (movimiento.x > 0) transform.rotation = Quaternion.Euler(0, 180, 0);
     }
 
-    // Detección de espacios en torno al lobo (Jugador)
     void PisoChecker()
     {
         Vector2 posicion = transform.position;
@@ -105,35 +105,91 @@ public class MovimientoJugador : MonoBehaviour
         RaycastHit2D hitIzquierda = Physics2D.Raycast(esquinaIzquierda, Vector2.down, groundCheckDistance);
         RaycastHit2D hitDerecha = Physics2D.Raycast(esquinaDerecha, Vector2.down, groundCheckDistance);
 
-        if (hitCentro.collider || hitIzquierda.collider || hitDerecha.collider)
-        {
-            puedeSaltar = true;
-        }
-        else
-        {
-            puedeSaltar = false;
-        }
+        puedeSaltar = hitCentro.collider || hitIzquierda.collider || hitDerecha.collider;
+        animator.SetBool("isJumping", !puedeSaltar);
     }
 
-    // Aplico salto sobre el lobo (Jugador)
     void AplicarSalto(float fuerzaSalto)
     {
         rb.velocity = new Vector2(rb.velocity.x, fuerzaSalto);
+        animator.SetBool("isJumping", true); // Aseguramos que la animación de salto se active
     }
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        // Verifico la colision con el suelo por Tag o por Layer
-        if (col.gameObject.CompareTag("Suelo") 
-            || col.gameObject.CompareTag("piso") 
-            || col.gameObject.layer == LayerMask.NameToLayer("Piso")
-            || col.gameObject.CompareTag("Arbol"))
+        if (col.gameObject.CompareTag("Arbol") && !estaEmpujando)
         {
-            animator.SetBool("isJumping", false);
+            arbol = col.gameObject;
+
+            BloqueMovible bloqueMovible = arbol.GetComponent<BloqueMovible>();
+            if (bloqueMovible != null && !bloqueMovible.EstaEnElSuelo())
+            {
+                estaEmpujando = true;
+                rb.velocity = Vector2.zero;
+
+                // Detenemos cualquier animación en curso
+                animator.SetBool("isDashing", false);
+                animator.SetBool("isJumping", false);
+                animator.SetBool("IsRunning", false);
+
+                StartCoroutine(EsperarUnFrameYEmpujar());
+            }
         }
-        if (col.gameObject.CompareTag("Arbol"))
+    }
+
+    IEnumerator EsperarUnFrameYEmpujar()
+    {
+        yield return null;
+        IniciarEmpuje();
+    }
+
+    void IniciarEmpuje()
+    {
+        animator.SetBool("isInteracting", true);
+        Invoke("ComenzarEmpuje", 1f);
+    }
+
+    void ComenzarEmpuje()
+    {
+        animator.SetTrigger("Empujar");
+
+        if (arbol != null)
         {
-            animator.SetBool("isInteracting", true);
+            Rigidbody2D arbolRb = arbol.GetComponent<Rigidbody2D>();
+            if (arbolRb != null)
+            {
+                arbolRb.bodyType = RigidbodyType2D.Dynamic;
+                arbolRb.AddForce(new Vector2(fuerzaEmpuje * transform.localScale.x, 0), ForceMode2D.Impulse);
+            }
         }
+
+        StartCoroutine(EsperarArbolCaido());
+    }
+
+    IEnumerator EsperarArbolCaido()
+    {
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+
+        if (arbol != null)
+        {
+            animator.SetBool("isInteracting", false);
+            estaEmpujando = false;
+
+            // Restablecer cualquier estado que pueda haberse alterado durante el empuje
+            ResetearEstados();
+        }
+    }
+
+    void ResetearEstados()
+    {
+        // Asegurar que se puedan realizar otras acciones (como saltar) después de empujar
+        animator.SetBool("isJumping", false);
+        animator.SetBool("isDashing", false);
+        animator.SetBool("IsRunning", false);
+        animator.SetBool("isInteracting", false);
+
+        puedeSaltar = true;
+        quiereSaltar = false;
+        estaEmpujando = false;
     }
 }
