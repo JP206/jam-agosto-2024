@@ -1,0 +1,1266 @@
+fileFormatVersion: 2
+guid: 4914c3653adcde4418a29a4e1608d160
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5250
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94d43c0a78a1b14ea2f10673522f708
+      internalID: -1017376660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_1
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 5250
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5629f21d037b8fd4ab24a29e19425516
+      internalID: 603100714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_2
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 5250
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63ade043c0768d49b6ff2cabc168bd4
+      internalID: 1972776579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_3
+      rect:
+        serializedVersion: 2
+        x: 2850
+        y: 5250
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c64bf982326944688c9c87f3d4d674
+      internalID: 832030474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_4
+      rect:
+        serializedVersion: 2
+        x: 3800
+        y: 5250
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ce68c111dfa8640a7823e27486dbc9
+      internalID: -1836828508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_5
+      rect:
+        serializedVersion: 2
+        x: 4750
+        y: 5250
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b616ac239d868c45b731c82d16a0708
+      internalID: -708396755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_6
+      rect:
+        serializedVersion: 2
+        x: 5700
+        y: 5250
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66093b8d2eef7cb47a2c586fefd0303a
+      internalID: -1658194239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4500
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d748471cfe189b45a2a975a971f2721
+      internalID: 1181249359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_8
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 4500
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ddb39128e8b3842bbfce8b6cba2fc2
+      internalID: 2047230690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_9
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 4500
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136bfeff2700e4946a4936e1f2515d1f
+      internalID: -303841394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_10
+      rect:
+        serializedVersion: 2
+        x: 2850
+        y: 4500
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c590c2aabc0a7344a8fdb1e14d5de373
+      internalID: -1369283287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_11
+      rect:
+        serializedVersion: 2
+        x: 3800
+        y: 4500
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 819f196a121305e41b1f50a8b580f558
+      internalID: -1894989889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_12
+      rect:
+        serializedVersion: 2
+        x: 4750
+        y: 4500
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a64383e98ec52ae41aff2746734cb57e
+      internalID: -1875011088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_13
+      rect:
+        serializedVersion: 2
+        x: 5700
+        y: 4500
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de38298e2270bdd418b221ce5c83c317
+      internalID: 1953156627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3750
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8b68049459e5a4e9f7e03744bcb9b1
+      internalID: 538228397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_15
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 3750
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70de7a2d7e967564d8f90234405d87cd
+      internalID: -1845375735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_16
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 3750
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddddc6ea681650544a282507d3d759e1
+      internalID: 1616112022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_17
+      rect:
+        serializedVersion: 2
+        x: 2850
+        y: 3750
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 415d220a9bf8a884e97249e1c2bc35d8
+      internalID: -757805193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_18
+      rect:
+        serializedVersion: 2
+        x: 3800
+        y: 3750
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54bbe7e747d5ae746b0488114b10bbde
+      internalID: -756583121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_19
+      rect:
+        serializedVersion: 2
+        x: 4750
+        y: 3750
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c97aeb4d9c5bf4a84509ed5d6ec4e2
+      internalID: -1210268878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_20
+      rect:
+        serializedVersion: 2
+        x: 5700
+        y: 3750
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50859691fc3ed594cb817f3cc89bba74
+      internalID: 1514958094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3000
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a19a5100a2dc043a8f497825d3a3a2
+      internalID: 962177317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_22
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 3000
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77946366476026409ca0ac8c2d170d7
+      internalID: 1887883612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_23
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 3000
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf0fc47f16752b469b2345d6e36ed09
+      internalID: -1804150767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_24
+      rect:
+        serializedVersion: 2
+        x: 2850
+        y: 3000
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a450893f62dcd974986177bca9ce63dc
+      internalID: 371336547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_25
+      rect:
+        serializedVersion: 2
+        x: 3800
+        y: 3000
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b724e66cbd77a1942b4708f93652c03a
+      internalID: -1879480819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_26
+      rect:
+        serializedVersion: 2
+        x: 4750
+        y: 3000
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc70d760f5da5144a8392a0a3f8dd90
+      internalID: 1527450397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_27
+      rect:
+        serializedVersion: 2
+        x: 5700
+        y: 3000
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebacbe64a823f464da945c0fbd085997
+      internalID: -1000934650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2250
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4ab7db36ef4e8419ac53f49c4f5b8a
+      internalID: 1547142220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_29
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 2250
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c9583e8a0dd1e4bb7916b4482f4b77
+      internalID: 2041844719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_30
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 2250
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c3f0ea5feae9504fadfdfe515c3a525
+      internalID: -630222562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_31
+      rect:
+        serializedVersion: 2
+        x: 2850
+        y: 2250
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82de54a17662054428ffb223b9cf42ec
+      internalID: -463873226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_32
+      rect:
+        serializedVersion: 2
+        x: 3800
+        y: 2250
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307228a5f01db0f49be9024c9dbd6e4c
+      internalID: 1027761188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_33
+      rect:
+        serializedVersion: 2
+        x: 4750
+        y: 2250
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c38177b7c899d4b84bedd5b16a44dc
+      internalID: 907010285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_34
+      rect:
+        serializedVersion: 2
+        x: 5700
+        y: 2250
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd691e062d364d94f9eb80f289becf1a
+      internalID: 50609126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fad42cf509d244da8f3dbcce5c293b
+      internalID: 198222062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_36
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1500
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510a8531e6a33ac439234bc93343b35f
+      internalID: 1838623315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_37
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 1500
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b1d5cc5b1264446979ee21ea96d067
+      internalID: 1675692890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_38
+      rect:
+        serializedVersion: 2
+        x: 2850
+        y: 1500
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8dcd8a2ca157349845fba5c133c22c
+      internalID: -893616775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_39
+      rect:
+        serializedVersion: 2
+        x: 3800
+        y: 1500
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c46e961a0f3fc74bbdb33b7d05bcd93
+      internalID: -968610520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_40
+      rect:
+        serializedVersion: 2
+        x: 4750
+        y: 1500
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d0bfbc78ef520488a1d04b9b0d4f8f
+      internalID: -482077525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_41
+      rect:
+        serializedVersion: 2
+        x: 5700
+        y: 1500
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cff2b0e3330644468902a7d76a6321a
+      internalID: -637631372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 750
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f45c8da976cfa418e85c9964f485c5
+      internalID: 43567579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_43
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 750
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6895ae8f08ea7be4ba731e092da3134a
+      internalID: 1262236651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_44
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 750
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254093ed79d9de04c8fca2745dcbc5aa
+      internalID: 1366865860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_45
+      rect:
+        serializedVersion: 2
+        x: 2850
+        y: 750
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04336e7f4b3835640af1e52b63d62212
+      internalID: 142656194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_46
+      rect:
+        serializedVersion: 2
+        x: 3800
+        y: 750
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9adef864b219123408e8fe84d5d16b20
+      internalID: 1931170867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_47
+      rect:
+        serializedVersion: 2
+        x: 4750
+        y: 750
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363fd43fad6f4a34f99faffbd447e73d
+      internalID: -299268061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_48
+      rect:
+        serializedVersion: 2
+        x: 5700
+        y: 750
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a171dc39595f4d458884499d3f29905
+      internalID: 72022542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cazadpr-re_poso.gif_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 950
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a7de35d480a8249a71e57b5162ce0f
+      internalID: 508800578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      cazadpr-re_poso.gif_0: -1017376660
+      cazadpr-re_poso.gif_1: 603100714
+      cazadpr-re_poso.gif_10: -1369283287
+      cazadpr-re_poso.gif_11: -1894989889
+      cazadpr-re_poso.gif_12: -1875011088
+      cazadpr-re_poso.gif_13: 1953156627
+      cazadpr-re_poso.gif_14: 538228397
+      cazadpr-re_poso.gif_15: -1845375735
+      cazadpr-re_poso.gif_16: 1616112022
+      cazadpr-re_poso.gif_17: -757805193
+      cazadpr-re_poso.gif_18: -756583121
+      cazadpr-re_poso.gif_19: -1210268878
+      cazadpr-re_poso.gif_2: 1972776579
+      cazadpr-re_poso.gif_20: 1514958094
+      cazadpr-re_poso.gif_21: 962177317
+      cazadpr-re_poso.gif_22: 1887883612
+      cazadpr-re_poso.gif_23: -1804150767
+      cazadpr-re_poso.gif_24: 371336547
+      cazadpr-re_poso.gif_25: -1879480819
+      cazadpr-re_poso.gif_26: 1527450397
+      cazadpr-re_poso.gif_27: -1000934650
+      cazadpr-re_poso.gif_28: 1547142220
+      cazadpr-re_poso.gif_29: 2041844719
+      cazadpr-re_poso.gif_3: 832030474
+      cazadpr-re_poso.gif_30: -630222562
+      cazadpr-re_poso.gif_31: -463873226
+      cazadpr-re_poso.gif_32: 1027761188
+      cazadpr-re_poso.gif_33: 907010285
+      cazadpr-re_poso.gif_34: 50609126
+      cazadpr-re_poso.gif_35: 198222062
+      cazadpr-re_poso.gif_36: 1838623315
+      cazadpr-re_poso.gif_37: 1675692890
+      cazadpr-re_poso.gif_38: -893616775
+      cazadpr-re_poso.gif_39: -968610520
+      cazadpr-re_poso.gif_4: -1836828508
+      cazadpr-re_poso.gif_40: -482077525
+      cazadpr-re_poso.gif_41: -637631372
+      cazadpr-re_poso.gif_42: 43567579
+      cazadpr-re_poso.gif_43: 1262236651
+      cazadpr-re_poso.gif_44: 1366865860
+      cazadpr-re_poso.gif_45: 142656194
+      cazadpr-re_poso.gif_46: 1931170867
+      cazadpr-re_poso.gif_47: -299268061
+      cazadpr-re_poso.gif_48: 72022542
+      cazadpr-re_poso.gif_49: 508800578
+      cazadpr-re_poso.gif_5: -708396755
+      cazadpr-re_poso.gif_6: -1658194239
+      cazadpr-re_poso.gif_7: 1181249359
+      cazadpr-re_poso.gif_8: 2047230690
+      cazadpr-re_poso.gif_9: -303841394
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

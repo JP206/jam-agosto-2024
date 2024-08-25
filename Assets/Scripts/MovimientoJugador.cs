@@ -19,12 +19,17 @@ public class MovimientoJugador : MonoBehaviour
     bool estaEmpujando = false;
 
     private GameObject arbol;
+    ManejadorSonidos manejadorSonidos;
+
+    bool flagSonidoPasos = true;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         groundCheckDistance = GetComponent<BoxCollider2D>().size.y / 2 + bufferCheckDistance;
         velocidadActual = velocidadCaminar;
+
+        manejadorSonidos = GetComponent<ManejadorSonidos>();
     }
 
     void Update()
@@ -87,6 +92,17 @@ public class MovimientoJugador : MonoBehaviour
     {
         movimiento = new Vector2(moveInput * velocidadActual, rb.velocity.y);
         rb.velocity = movimiento;
+
+        if (rb.velocity.x != 0 && puedeSaltar && flagSonidoPasos)
+        {
+            manejadorSonidos.PlaySonidoPasos();
+            flagSonidoPasos = false;
+        }
+        else
+        {
+            flagSonidoPasos = true;
+            manejadorSonidos.StopSonidoPasos();
+        }
     }
 
     void RotacionHandler()
@@ -148,7 +164,7 @@ public class MovimientoJugador : MonoBehaviour
 
     IEnumerator EsperarUnFrameYEmpujar()
     {
-        yield return null;
+        yield return new WaitForEndOfFrame();
         IniciarEmpuje();
     }
 
@@ -169,6 +185,7 @@ public class MovimientoJugador : MonoBehaviour
             {
                 arbolRb.bodyType = RigidbodyType2D.Dynamic;
                 arbolRb.AddForce(new Vector2(fuerzaEmpuje * transform.localScale.x, 0), ForceMode2D.Impulse);
+                manejadorSonidos.ArbolCayendo();
             }
         }
 

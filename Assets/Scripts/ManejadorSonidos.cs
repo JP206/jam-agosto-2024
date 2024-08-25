@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class ManejadorSonidos : MonoBehaviour
 {
-    public AudioClip grunido, aullidoCachorros, clipMusicaTranquila, clipMusicaTensa;
-    AudioSource sfx, musica;
+    public AudioClip grunido, aullidoCachorros, clipMusicaTranquila, clipMusicaTensa, arbolCayendo, sonidoPasos;
+    AudioSource sfx, musica, pasos;
     bool musicaTranqui = true;
 
     int cantidadAullidosCachorros = 0;
+
+    CambiarColorFondo[] fondos;
    
     void Start()
     {
         sfx = transform.Find("sfx").GetComponent<AudioSource>();
         musica = transform.Find("musica").GetComponent<AudioSource>();
+        pasos = transform.Find("sonido pasos").GetComponent<AudioSource>();
+
+        fondos = FindObjectsOfType<CambiarColorFondo>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -70,12 +75,45 @@ public class ManejadorSonidos : MonoBehaviour
         if (musicaTranqui)
         {
             musica.clip = clipMusicaTranquila;
+            FondoBlanco();
         }
         else
         {
             musica.clip = clipMusicaTensa;
+            FondoVioleta();
         }
         musica.volume = 1;
         musica.Play();
+    }
+
+    public void ArbolCayendo()
+    {
+        sfx.PlayOneShot(arbolCayendo);
+    }
+
+    public void PlaySonidoPasos()
+    {
+        pasos.Play();
+    }
+
+    public void StopSonidoPasos()
+    {
+        pasos.Pause();
+    }
+
+    void FondoBlanco()
+    {
+        foreach (CambiarColorFondo c in fondos)
+        {
+            c.CambiarFondoBlanco();
+        }
+    }
+
+    void FondoVioleta()
+    {
+        foreach (CambiarColorFondo c in fondos)
+        {
+            c.CambiarFondoVioleta();
+        }
     }
 }

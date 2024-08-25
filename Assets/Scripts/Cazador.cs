@@ -9,10 +9,14 @@ public class Cazador : MonoBehaviour
     private bool jugadorDetectado = false;
     private bool enTransicion = false;
 
+    AudioSource audioSource;
+    public AudioClip disparoEscopeta;
+
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         // Iniciar la coroutine para hacer que el cazador se vaya después de un tiempo
-        StartCoroutine(EsperarYSalir());
+        //StartCoroutine(EsperarYSalir());
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -21,6 +25,7 @@ public class Cazador : MonoBehaviour
         {
             jugadorDetectado = true;
             Debug.Log("Game Over: El jugador ha muerto.");
+            audioSource.PlayOneShot(disparoEscopeta);
         }
     }
 
