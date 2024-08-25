@@ -1,6 +1,7 @@
 using System.Collections;
+using UnityEditor;
 using UnityEngine;
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement;
 
 public class MovimientoJugador : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class MovimientoJugador : MonoBehaviour
     bool estaEmpujando = false;
 
     private GameObject arbol;
+    private GameObject jaula;
+
     ManejadorSonidos manejadorSonidos;
 
     bool flagSonidoPasos = true;
@@ -129,7 +132,7 @@ public class MovimientoJugador : MonoBehaviour
     void AplicarSalto(float fuerzaSalto)
     {
         rb.velocity = new Vector2(rb.velocity.x, fuerzaSalto);
-        animator.SetBool("isJumping", true); 
+        animator.SetBool("isJumping", true);
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -151,6 +154,12 @@ public class MovimientoJugador : MonoBehaviour
 
                 StartCoroutine(EsperarUnFrameYEmpujar());
             }
+        }
+
+        // Aquí se detecta la colisión con el objeto que tiene el tag "Lobitos"
+        if (col.gameObject.CompareTag("Lobitos"))
+        {
+            StartCoroutine(PonerEnIdleYCargarGameOver());
         }
     }
 
@@ -175,7 +184,7 @@ public class MovimientoJugador : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         // Cargar la escena de Game Over
-        SceneManager.LoadScene("GameOver");  
+        SceneManager.LoadScene("GameOver");
     }
 
     IEnumerator EsperarUnFrameYEmpujar()
@@ -233,5 +242,20 @@ public class MovimientoJugador : MonoBehaviour
         puedeSaltar = true;
         quiereSaltar = false;
         estaEmpujando = false;
+    }
+
+    // Nueva corutina para poner al personaje en idle antes de cargar la escena de Game Over
+    IEnumerator PonerEnIdleYCargarGameOver()
+    {
+        // Poner al personaje en idle
+        animator.SetBool("isRunning", false);
+        animator.SetBool("isDashing", false);
+        animator.SetBool("isInteracting", true);
+
+        // Esperar 1 segundo
+        yield return new WaitForSeconds(1f);
+
+        // Cargar la escena de Game Over
+        SceneManager.LoadScene("Ending");
     }
 }

@@ -15,6 +15,7 @@ TagManager:
   - Fondo3
   - Frente
   - caida piedra
+  - Lobitos
   layers:
   - Default
   - TransparentFX
@@ -29,7 +30,7 @@ TagManager:
   - Fondo3
   - Frente
   - Piedras inclinadas
-  - 
+  - Lobitos
   - 
   - 
   - 

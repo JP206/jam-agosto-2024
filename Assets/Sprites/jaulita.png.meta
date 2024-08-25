@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b178ac0022d49f043837c018e1c41007
+guid: fdb61f20b8508db4fb0f04e6a23571ce
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,73 +119,131 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lobitos.gif_0
+      name: jaulita_0
       rect:
         serializedVersion: 2
-        x: 50
-        y: 140
-        width: 239
-        height: 207
+        x: 0
+        y: 962
+        width: 608
+        height: 480
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e7bad258c97dc245a871dfe6fd0af08
-      internalID: 723420930
+      spriteID: a10747c974c4f7d479b0e29a2f4405a8
+      internalID: -2010109764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lobitos.gif_1
+      name: jaulita_1
       rect:
         serializedVersion: 2
-        x: 583
-        y: 134
-        width: 437
-        height: 213
+        x: 608
+        y: 962
+        width: 608
+        height: 480
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd7d5b7a720ba8d468afc4fad1aae32f
-      internalID: 1907947880
+      spriteID: 9eed4c96951b608468be1eb2140a7cc3
+      internalID: -2091262189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jaulita_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 482
+        width: 608
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491ca23340f36cd4586fd578cd608873
+      internalID: -1587820003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jaulita_3
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 482
+        width: 608
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a088717eb1d684e4785f0b4de38e3a6b
+      internalID: 1163921124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jaulita_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 608
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed7be0437b16b74a927484f20de7905
+      internalID: 1783499695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jaulita_5
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 2
+        width: 608
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0683d1259d9db56419199ea167c5849d
+      internalID: 1148349970
       vertices: []
       indices: 
       edges: []
@@ -201,8 +259,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      lobitos.gif_0: 723420930
-      lobitos.gif_1: 1907947880
+      jaulita_0: -2010109764
+      jaulita_1: -2091262189
+      jaulita_2: -1587820003
+      jaulita_3: 1163921124
+      jaulita_4: 1783499695
+      jaulita_5: 1148349970
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
