@@ -124,7 +124,10 @@ public class MovimientoJugador : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col)
     {
         // Verifico la colision con el suelo por Tag o por Layer
-        if (col.gameObject.CompareTag("Suelo") || col.gameObject.CompareTag("piso") || col.gameObject.layer == LayerMask.NameToLayer("Piso"))
+        if (col.gameObject.CompareTag("Suelo") 
+            || col.gameObject.CompareTag("piso") 
+            || col.gameObject.layer == LayerMask.NameToLayer("Piso")
+            || col.gameObject.CompareTag("Arbol"))
         {
             animator.SetBool("isJumping", false);
         }
