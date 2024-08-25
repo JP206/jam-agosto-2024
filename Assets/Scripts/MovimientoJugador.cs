@@ -137,6 +137,15 @@ public class MovimientoJugador : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("caida piedra"))
+        {
+            // un poco de acoplamiento de codigo
+            GameObject.Find("piedra que cae").GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+        }
+    }
+
     IEnumerator EsperarUnFrameYEmpujar()
     {
         yield return null;

@@ -14,6 +14,7 @@ TagManager:
   - Fondo2
   - Fondo3
   - Frente
+  - caida piedra
   layers:
   - Default
   - TransparentFX
