@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement; 
 
 public class MovimientoJugador : MonoBehaviour
 {
@@ -128,7 +129,7 @@ public class MovimientoJugador : MonoBehaviour
     void AplicarSalto(float fuerzaSalto)
     {
         rb.velocity = new Vector2(rb.velocity.x, fuerzaSalto);
-        animator.SetBool("isJumping", true); // Aseguramos que la animación de salto se active
+        animator.SetBool("isJumping", true); 
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -160,6 +161,21 @@ public class MovimientoJugador : MonoBehaviour
             // un poco de acoplamiento de codigo
             GameObject.Find("piedra que cae").GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         }
+    }
+
+    public void EjecutarCorutina()
+    {
+        StartCoroutine(TransitionToGameOver());
+    }
+
+    IEnumerator TransitionToGameOver()
+    {
+        animator.SetBool("isHitted", true);
+        // Esperar la duración de la animación de golpeo
+        yield return new WaitForSeconds(1f);
+
+        // Cargar la escena de Game Over
+        SceneManager.LoadScene("GameOver");  
     }
 
     IEnumerator EsperarUnFrameYEmpujar()

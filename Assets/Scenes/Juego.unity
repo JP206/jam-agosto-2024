@@ -237,6 +237,56 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 194ffc34b6cf25f47958dc6a07b4dd9a, type: 3}
+--- !u!1 &168342398 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 182334059847556450, guid: 88c52e1d326d33944a042381afe9fe29, type: 3}
+  m_PrefabInstance: {fileID: 455106886}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &168342406
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168342398}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 8.558155, y: 1.4487855}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.3825767, y: 0.5409563}
+    oldSize: {x: 32.01001, y: 17.99}
+    newSize: {x: 32.01001, y: 17.99}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 22.41114, y: 10.402714}
+  m_EdgeRadius: 0
 --- !u!1001 &196143807
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -717,7 +767,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 182334059847556450, guid: 88c52e1d326d33944a042381afe9fe29, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 168342406}
   m_SourcePrefab: {fileID: 100100000, guid: 88c52e1d326d33944a042381afe9fe29, type: 3}
 --- !u!1001 &625945618
 PrefabInstance:
@@ -1656,9 +1709,9 @@ GameObject:
   - component: {fileID: 1216438097}
   - component: {fileID: 1216438098}
   - component: {fileID: 1216438099}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: piedra que cae
-  m_TagString: Untagged
+  m_TagString: Cazador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

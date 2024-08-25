@@ -24,14 +24,17 @@ public class Cazador : MonoBehaviour
         StartCoroutine(EsperarYSalir());
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D col)
     {
-        if (other.CompareTag("Player"))
+        if (col.gameObject.CompareTag("Player"))
         {
             jugadorDetectado = true;
-            Debug.Log("Game Over: El jugador ha muerto.");
             audioSource.PlayOneShot(disparoEscopeta);
+
+            col.gameObject.GetComponent<MovimientoJugador>().EjecutarCorutina();
+            
         }
+  
     }
 
     IEnumerator EsperarYSalir()
