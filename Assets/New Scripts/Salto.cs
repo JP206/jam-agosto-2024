@@ -5,22 +5,26 @@ using UnityEngine;
 public class Salto : MonoBehaviour
 {
     SpacialDetector detector;
+    MovimientoLoba movmiento;
     Animator animator;
 
-    Rigidbody2D rb;
-    [SerializeField] float fuerzaSalto = 10f;
+    [SerializeField] float fuerzaSalto;
 
-    void Start()
+    public void InitializeReferences(SpacialDetector _spacialDetector, Animator _anim, MovimientoLoba _movmiento)
     {
-        rb = GetComponent<Rigidbody2D>();
+        detector = _spacialDetector;
+        animator = _anim;
+        movmiento = _movmiento;
     }
 
     public void RealizarSalto()
     {
         if(detector.EstaEnElSuelo(0.1f, 0))
         {
-            rb.velocity = new Vector2(rb.velocity.x, fuerzaSalto);
+            movmiento.AplicarSalto(fuerzaSalto);
+
             animator.SetBool("isJumping", true);
+
         }
     }
 }

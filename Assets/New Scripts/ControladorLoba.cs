@@ -14,6 +14,7 @@ public class ControladorLoba : MonoBehaviour
     {
         // Configuración de referencias en Jump y Movement
         movimientoLoba.InitializeReferences(detector, animator);
+        salto.InitializeReferences(detector, animator, movimientoLoba);
     }
 
     public void InitializeReferences(MovimientoLoba _movimientoLoba, Salto _salto)

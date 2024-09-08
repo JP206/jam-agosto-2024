@@ -16,10 +16,10 @@ public class MovimientoLoba : MonoBehaviour
     [SerializeField] float velocidadCaminar = 5f;
     [SerializeField] float velocidadCorrer = 10f;
     [SerializeField] float fuerzaEmpuje = 10f;
+    [SerializeField] float fuerzaGravitatoria;
 
     float velocidadX;
     float velocidadY;
-    float fuerzaGravitatoria;
 
     //Propiedaes para escalar el movimiento
     float deltaX => velocidadX * Time.fixedDeltaTime;
@@ -55,16 +55,11 @@ public class MovimientoLoba : MonoBehaviour
 
     public void MovmientoY()
     {
-        // Si hay un techo, detiene el movimiento vertical hacia arriba
-        if (velocidadY > 0)
-        {
-            velocidadY = 0;
-        }
-
         if (!detector.EstaEnElSuelo(0.2f, deltaY))
         {
             //Controlo la fuerza de gravedad
             velocidadY -= fuerzaGravitatoria;
+            Debug.Log("velocidadY" + velocidadY);
         }
 
         //Detecto si el personaje llego al piso aplicando a mi fuerza vertical 0 para que no se mueva
@@ -79,5 +74,10 @@ public class MovimientoLoba : MonoBehaviour
             //Setteo el boolean del animator para animacion de salto
             animator.SetBool("isJumping", false);
         }
+    }
+
+    public void AplicarSalto(float velocidadSalto)
+    {
+        velocidadY += velocidadSalto;
     }
 }

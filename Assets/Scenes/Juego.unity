@@ -2271,9 +2271,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 1328913200}
-  velocidadCaminar: 5
-  velocidadCorrer: 10
+  velocidadCaminar: 8
+  velocidadCorrer: 12
   fuerzaEmpuje: 10
+  fuerzaGravitatoria: 0.7
 --- !u!1 &1384209696
 GameObject:
   m_ObjectHideFlags: 0
