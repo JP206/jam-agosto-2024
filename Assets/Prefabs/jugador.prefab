@@ -394,12 +394,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8450705716187020987}
   - component: {fileID: 8855670737837895155}
-  - component: {fileID: 2069072935574624298}
-  - component: {fileID: 143755176740012610}
-  - component: {fileID: 5833099965258919263}
   - component: {fileID: 6151150302752718641}
-  - component: {fileID: 9207821393137491048}
-  - component: {fileID: 5362584022209009611}
   m_Layer: 2
   m_Name: jugador
   m_TagString: Player
@@ -477,95 +472,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &2069072935574624298
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7771080372357722551}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 2
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 0
---- !u!61 &143755176740012610
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7771080372357722551}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.29888827, y: -0.2190659}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.4, y: 5.4}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4.18017, y: 1.8607984}
-  m_EdgeRadius: 0
---- !u!114 &5833099965258919263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7771080372357722551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 428724f42e84d2348acb72445cd90f32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidadCaminar: 8
-  velocidadCorrer: 10
-  fuerzaSalto: 8
-  fuerzaEmpuje: 6
-  animator: {fileID: 6151150302752718641}
 --- !u!95 &6151150302752718641
 Animator:
   serializedVersion: 5
@@ -587,38 +493,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &9207821393137491048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7771080372357722551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b1cc7d69ee87da4c9ef89b65a64d767, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grunido: {fileID: 8300000, guid: 67b7e7d9ba94ab04fa924f56fbb976e0, type: 3}
-  aullidoCachorros: {fileID: 8300000, guid: b2a9ac2b344a5654db31a2279b71af99, type: 3}
-  clipMusicaTranquila: {fileID: 8300000, guid: cf1767798633c6e42b9e305b3b93a3a5, type: 3}
-  clipMusicaTensa: {fileID: 8300000, guid: 66856bc0e4ff3d64ab855bc66f662d0f, type: 3}
-  arbolCayendo: {fileID: 8300000, guid: 533b269121bdc634e8f338fdb91422b0, type: 3}
---- !u!114 &5362584022209009611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7771080372357722551}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93e15d5846aa45c4f81fc2b7b4ace2b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rayLength: 1.5
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 4096
-  rotacionSuavizada: 5
-  offsetRayos: 1.5
